@@ -3,7 +3,7 @@ require 'rack/cors'
 
 use Rack::Cors do 
     allow do
-      origins 'https://objective-austin-693728.netlify.app/'
+      origins '*'
       resource '*', :headers => :any, :methods => [:get, :post, :delete, :options]
     end
   end
